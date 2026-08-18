@@ -3,7 +3,7 @@
 My documented journey of learning cybersecurity — concepts, labs, tools, projects, and practical exercises.
 
 ## About This Repository
-This repository tracks my progress as I build a solid foundation in cybersecurity while working toward financial independence.
+This repository tracks my progress as I build a solid foundation in cybersecurity
 
 ## Structure
 - `notes/` → Daily learning notes & concepts
