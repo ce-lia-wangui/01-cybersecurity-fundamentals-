@@ -42,26 +42,76 @@ An attacker who obtains the student's password and accesses their records would 
 
 Threats to Confidentiality
 Examples include:
-Phishing
-Password theft
-Data breaches
-Eavesdropping
-Malware
-Unauthorized access
-Social engineering
-Security Controls
-Examples include:
-Passwords
-Multi-factor authentication
-Encryption
-Access controls
-Permissions
-Authentication
-Network segmentation
+• Phishing - An attacker tricks a user into revealing sensitive information such as passwords or account credentials.
+• Password theft - An attacker obtains a user's password and uses it to access protected information.
+• Data breaches - Unauthorized individuals gain access to sensitive organizational or personal data.
+• Eavesdropping - An attacker secretly monitors communications to obtain information.
+• Social Engineering: An attacker manipulates a person into revealing confidential information or granting access.
+• Spyware: Malicious software secretly monitors a user's activity or collects sensitive information.
+• Unauthorized Access: An individual accesses a system, account, or database without permission.
+• Shoulder Surfing: An attacker observes someone entering sensitive information, such as a password or PIN.
+• Lost or Stolen Devices: A lost or stolen laptop, phone, or storage device may expose sensitive information stored on it.
+
+Example:
+An attacker sends a student a fake university login page. The student enters their username and password, which are then sent to the attacker. The attacker can now potentially access the student's academic information.
+CIA principle affected: Confidentiality.
 
 
 Key Question
 Who is allowed to see this information?
+
+Protecting Confidentiality
+The goal is to prevent unauthorized people from accessing or viewing sensitive information.
+Common controls
+
+1. Strong Passwords
+Users should use long, unique passwords that are difficult to guess.
+Example:
+Instead of:
+password123
+Use a strong, unique passphrase such as:
+Blue-River!Coffee-72-Moon
+
+2. Multi-Factor Authentication (MFA)
+MFA requires users to provide more than one form of authentication.
+For example:
+Password + authenticator app code
+Even if an attacker steals the password, they may still be unable to access the account.
+Protects: Confidentiality
+
+3. Encryption
+Encryption converts readable information (plaintext) into an unreadable form (ciphertext) that can only be properly interpreted using the appropriate key.
+For example:
+Student Grade: A
+↓ Encryption
+8fK@92xL...
+Encryption can protect data:
+At rest — data stored on devices/databases
+In transit — data moving across networks
+Protects: Mainly Confidentiality
+
+4. Access Control
+Users should only have access to the information they actually need.
+For example:
+A university receptionist may need access to student contact information but may not need permission to modify examination grades.
+This is related to the principle of least privilege:
+Give users only the permissions necessary to perform their jobs.
+
+5. Network Segmentation
+A network can be divided into separate sections so that access to one area does not automatically provide access to everything else.
+For example:
+Student Network → Web Servers → Database Servers
+If an attacker compromises one section, segmentation can make it harder to reach sensitive systems.
+
+6. Security Awareness Training
+Employees should be trained to recognize:
+Phishing emails
+Fake login pages
+Social engineering
+Suspicious attachments
+Malicious links
+This is especially important because humans can be targeted by attackers.
+
 
 2. Integrity
 Definition
@@ -79,13 +129,14 @@ the integrity of the information has been compromised.
 
 Threats to Integrity
 Examples include:
-Unauthorized modification
-Malware
-Database manipulation
-Man-in-the-middle attacks
-Insider threats
-Data corruption
-Security Controls
+• Unauthorized Modification: Someone changes information without permission.
+• Database Manipulation: An attacker modifies records stored in a database.
+• Malware: Malicious software may modify, delete, or corrupt files.
+• Man-in-the-Middle Attacks: An attacker intercepts communication and may alter information while it is being transmitted.
+• Insider Threats: An authorized employee intentionally or accidentally modifies information improperly.
+• Data Corruption: Information becomes inaccurate or damaged because of technical problems, malware, or other causes.
+• Website Defacement: An attacker gains access to a website and changes its content.
+• Unauthorized Transactions: An attacker modifies financial or transaction information without authorization.
 
 Examples include:
 Hashing
@@ -98,6 +149,52 @@ Backups
 
 Key Question
 Can I trust that this information is accurate and has not been improperly changed?
+
+Protecting Integrity
+The goal is to ensure that information remains accurate, complete, and trustworthy.
+Common controls
+1. Hashing
+A cryptographic hash can be used to detect whether data has been changed.
+For example:
+Original file → Hash → A81F...
+If the file is modified:
+Modified file → Hash → 93BC...
+The different hash values indicate that the data has changed.
+Important: Hashing is generally used for integrity verification, not for keeping data secret.
+
+2. Digital Signatures
+Digital signatures can help verify:
+Who created/signed the information
+Whether the information was modified after signing
+They therefore provide important integrity and authenticity protections.
+
+3. Access Controls and Permissions
+Users should not have permission to modify information unless their job requires it.
+For example:
+A student might be allowed to view their grade but should not have permission to change it.
+
+4. Audit Logs
+Systems should record important activities such as:
+Who logged in?
+What did they access?
+What did they change?
+When did they change it?
+If someone's grade is changed, an audit log may help investigators determine:
+Who changed it, when, and from which account/system?
+This is extremely important in security investigations and SOC environments.
+
+5. Version Control
+Organizations can maintain previous versions of important files or configurations.
+If an unauthorized change occurs, security teams may be able to identify the change and restore the previous version.
+
+6. Backups
+Regular backups allow organizations to recover from:
+Data corruption
+Malware
+Ransomware
+Accidental deletion
+Hardware failures
+Backups are therefore important for both Integrity and Availability.
 
 
 C. Availability
@@ -114,36 +211,102 @@ This is an availability problem.
 
 Threats to Availability
 Examples include:
-Distributed Denial-of-Service (DDoS) attacks
-Hardware failure
-Power outages
-Ransomware
-Network failures
-Natural disasters
-Server crashes
-Security Controls
-
-
-Examples include:
-Backups
-Redundant systems
-Disaster recovery
-Load balancing
-Failover systems
-Power protection
-DDoS protection
-System monitoring
+• Distributed Denial-of-Service (DDoS) Attacks: Attackers overwhelm a system or server with traffic, making it difficult or impossible for legitimate users to access it.
+• Ransomware: Malicious software encrypts files or systems, preventing legitimate users from accessing them.
+• Hardware Failure: Failure of servers, storage devices, or other hardware can make systems unavailable.
+• Power Outages: Loss of electricity can cause systems and services to become unavailable.
+• Network Failures: Problems with network infrastructure can prevent users from accessing systems.
+• Server Crashes: A server failure can cause applications and services to stop working.
+• Natural Disasters: Floods, fires, earthquakes, and other disasters can damage infrastructure.
+• Resource Exhaustion: Excessive use of CPU, memory, storage, or other resources can cause a system to become unavailable.
 
 Key Question
 Can authorized users access the system when they need it?
+
+Protecting Availability
+The goal is to ensure that authorized users can access systems and information when they need them.
+Common controls
+
+1. Backups
+Organizations should maintain reliable backups of important data.
+A good backup strategy helps an organization recover after:
+Ransomware → Data loss → Recovery from backup
+
+2. Redundancy
+Organizations can use multiple servers, storage systems, network connections, or other components.
+If one fails:
+Server A 
+↓
+Server B continues operating 
+This reduces the impact of individual failures.
+
+3. Failover Systems
+A failover system automatically switches to another system when the primary system fails.
+For example:
+Primary Server → Failure 
+↓
+Backup Server → Takes over 
+
+4. Load Balancing
+A load balancer distributes traffic across multiple servers.
+Instead of:
+10,000 users → One server
+Traffic can be distributed:
+10,000 users
+↓
+Server A
+Server B
+Server C
+Server D
+This can improve performance and resilience.
+
+5. DDoS Protection
+Organizations can use DDoS protection services and network controls to detect and mitigate malicious traffic.
+The goal is to prevent attackers from overwhelming the organization's systems.
+6. Disaster Recovery
+Organizations should have a plan for recovering systems after major incidents such as:
+Cyberattacks
+Fires
+Floods
+Power failures
+Hardware failures
+A disaster recovery plan answers questions such as:
+What systems need to be restored first?
+Where will systems be restored?
+How quickly should they be restored?
+
+7. System Monitoring
+Security and IT teams monitor systems for problems such as:
+High CPU usage
+High memory usage
+Network failures
+Server crashes
+Unusual traffic
+Service outages
+Early detection allows teams to respond before a small problem becomes a major outage.
 
 A simple way I remember the CIA Triad is:
 CONFIDENTIALITY → SEE
 INTEGRITY → TRUST
 AVAILABILITY → ACCESS
 
+Threats Can Affect More Than One CIA Principle
+It is important to understand that an attack does not always affect only one part of the CIA Triad.
+For example, ransomware can affect all three principles.
+• Confidentiality
+If attackers steal sensitive files before encrypting them, confidential information may be exposed.
+• Integrity
+The attackers modify or encrypt the original files, meaning the information has been altered without authorization.
+• Availability
+Users can no longer access their files because they have been encrypted.
+Therefore, a single ransomware incident can potentially affect:
+• Confidentiality + Integrity + Availability
+This is why cybersecurity professionals need to examine an incident carefully rather than automatically assigning an attack to only one category.
+
+
 
 Real-World Example: University Student Portal
+
 Consider an online university student portal containing:
 Student names
 Grades
@@ -158,8 +321,8 @@ Grades, fee balances, and other records should not be changed without authorizat
 
 Availability
 Students and authorized staff should be able to access the portal when they need it.
-Therefore, a secure student portal needs all three elements of the CIA Triad.
 
+Therefore, a secure student portal needs all three elements of the CIA Triad.
 
 9. Why the CIA Triad Matters
 The CIA Triad provides a simple way to think about information security.
@@ -193,6 +356,11 @@ The easiest way for me to remember the CIA Triad is:
 Confidentiality — Who can see it?
 Integrity — Can I trust it?
 Availability — Can I access it?
+
+• Threats to information systems can compromise the confidentiality, integrity, availability, or even multiple principles of the CIA Triad simultaneously.
+• Understanding these threats is important because cybersecurity professionals must be able to identify what is being attacked, how it is being affected, and which security controls can reduce the risk.
+• This provides a foundation for understanding more advanced cybersecurity areas such as incident response, vulnerability management, threat detection, security monitoring, and SOC analysis.
+
 
 Questions I Want to Explore Next
 • How does encryption protect confidentiality?
