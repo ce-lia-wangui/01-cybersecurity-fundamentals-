@@ -1,227 +1,205 @@
-# Introduction to Cybersecurity & The CIA Triad
-
-**Date:** 18 August 2026  
-**Topic:** Cybersecurity Fundamentals – CIA Triad
-
----
-
-## 1. Introduction
-
+1. Introduction
 I am beginning my cybersecurity learning journey by studying some of the fundamental concepts used in information security.
 
-One of the first concepts I am learning is the **CIA Triad**.
+One of the first concepts I am learning is the CIA Triad.
 
 The CIA Triad is a fundamental security model consisting of three principles:
-- **Confidentiality**
-- **Integrity**
-- **Availability**
-
+• Confidentiality
+• Integrity
+• Availability
 These principles help security professionals understand what needs to be protected when securing information and information systems.
 
----
-
-## 2. What is Cybersecurity?
-
+2. What is Cybersecurity?
 Cybersecurity is the practice of protecting computers, networks, applications, devices, systems, and data from unauthorized access, misuse, damage, disruption, or theft.
 
-### Examples of assets that may need protection:
-- Personal information
-- Passwords
-- Financial information
-- Databases
-- Computer systems
-- Networks
-- Applications
-- Cloud services
+Examples of assets that may need protection include:
+• Personal information
+• Passwords
+• Financial information
+• Databases
+• Computer systems
+• Networks
+• Applications
+• Cloud services
 
----
+3. The CIA Triad
+The CIA Triad consist of:
+a. C- confidentiality
+b. I- integrity
+c. A- Availability
 
-## 3. The CIA Triad
+1. Confidentiality
+Definition
 
-The CIA Triad consists of:
-
-- **C** – Confidentiality  
-- **I** – Integrity  
-- **A** – Availability  
-
----
-
-### 1. Confidentiality
-
-**Definition**  
 Confidentiality means ensuring that information is accessible only to authorized individuals, systems, or processes.
 
-**In simple terms:**  
+In simple terms:
 Confidentiality means preventing unauthorized people from accessing or viewing information.
 
-**Example:**  
-A student's academic records should only be accessible to the student and authorized university staff.  
+Example:
+A student's academic records should only be accessible to the student and authorized university staff.
 An attacker who obtains the student's password and accesses their records would be a violation of confidentiality.
 
-**Threats to Confidentiality:**
-- Phishing
-- Password theft
-- Data breaches
-- Eavesdropping
-- Malware
-- Unauthorized access
-- Social engineering
+Threats to Confidentiality
+Examples include:
+Phishing
+Password theft
+Data breaches
+Eavesdropping
+Malware
+Unauthorized access
+Social engineering
+Security Controls
+Examples include:
+Passwords
+Multi-factor authentication
+Encryption
+Access controls
+Permissions
+Authentication
+Network segmentation
 
-**Security Controls:**
-- Passwords
-- Multi-factor authentication (MFA)
-- Encryption
-- Access controls
-- Permissions
-- Authentication
-- Network segmentation
 
-**Key Question:**  
+Key Question
 Who is allowed to see this information?
 
----
-
-### 2. Integrity
-
-**Definition**  
+2. Integrity
+Definition
 Integrity means ensuring that information remains accurate, complete, trustworthy, and protected from unauthorized modification.
 
-**In simple terms:**  
+In simple terms:
 Integrity means making sure information has not been improperly changed.
 
-**Example:**  
-Suppose a university database records a student's grade as:  
-`Grade: A`  
+Example
+Suppose a university database records a student's grade as:
+Grade: A
+If an unauthorized person changes it to:
+Grade: F
+the integrity of the information has been compromised.
 
-If an unauthorized person changes it to:  
-`Grade: F`  
+Threats to Integrity
+Examples include:
+Unauthorized modification
+Malware
+Database manipulation
+Man-in-the-middle attacks
+Insider threats
+Data corruption
+Security Controls
 
-The integrity of the information has been compromised.
+Examples include:
+Hashing
+Digital signatures
+Access controls
+File permissions
+Version control
+Audit logs
+Backups
 
-**Threats to Integrity:**
-- Unauthorized modification
-- Malware
-- Database manipulation
-- Man-in-the-middle attacks
-- Insider threats
-- Data corruption
-
-**Security Controls:**
-- Hashing
-- Digital signatures
-- Access controls
-- File permissions
-- Version control
-- Audit logs
-- Backups
-
-**Key Question:**  
+Key Question
 Can I trust that this information is accurate and has not been improperly changed?
 
----
 
-### 3. Availability
+C. Availability
+Definition
 
-**Definition**  
 Availability means ensuring that authorized users can access information and systems when they need them.
 
-**In simple terms:**  
+In simple terms:
 Availability means keeping systems and information accessible to authorized users when required.
 
-**Example:**  
-If a university student portal becomes unavailable during course registration, students may be unable to register for their courses. This is an availability problem.
+Example
+If a university student portal becomes unavailable during course registration, students may be unable to register for their courses.
+This is an availability problem.
 
-**Threats to Availability:**
-- Distributed Denial-of-Service (DDoS) attacks
-- Hardware failure
-- Power outages
-- Ransomware
-- Network failures
-- Natural disasters
-- Server crashes
+Threats to Availability
+Examples include:
+Distributed Denial-of-Service (DDoS) attacks
+Hardware failure
+Power outages
+Ransomware
+Network failures
+Natural disasters
+Server crashes
+Security Controls
 
-**Security Controls:**
-- Backups
-- Redundant systems
-- Disaster recovery
-- Load balancing
-- Failover systems
-- Power protection (UPS)
-- DDoS protection
-- System monitoring
 
-**Key Question:**  
+Examples include:
+Backups
+Redundant systems
+Disaster recovery
+Load balancing
+Failover systems
+Power protection
+DDoS protection
+System monitoring
+
+Key Question
 Can authorized users access the system when they need it?
 
----
+A simple way I remember the CIA Triad is:
+CONFIDENTIALITY → SEE
+INTEGRITY → TRUST
+AVAILABILITY → ACCESS
 
-## Easy Way to Remember the CIA Triad
 
-| Principle         | Simple Meaning     |
-|-------------------|--------------------|
-| Confidentiality   | **SEE**            |
-| Integrity         | **TRUST**          |
-| Availability      | **ACCESS**         |
-
----
-
-## Real-World Example: University Student Portal
-
+Real-World Example: University Student Portal
 Consider an online university student portal containing:
-- Student names
-- Grades
-- Course information
-- Fee information
-- Personal information
+Student names
+Grades
+Course information
+Fee information
+Personal information
+Confidentiality
+Only authorized users should be able to view private student information.
 
-| Principle         | How it applies                                      |
-|-------------------|-----------------------------------------------------|
-| **Confidentiality** | Only authorized users should view private student information |
-| **Integrity**       | Grades and fee balances should not be changed without authorization |
-| **Availability**    | Students and staff should be able to access the portal when needed |
+Integrity
+Grades, fee balances, and other records should not be changed without authorization.
 
-A secure student portal needs **all three** elements of the CIA Triad.
+Availability
+Students and authorized staff should be able to access the portal when they need it.
+Therefore, a secure student portal needs all three elements of the CIA Triad.
 
----
 
-## Why the CIA Triad Matters
-
+9. Why the CIA Triad Matters
 The CIA Triad provides a simple way to think about information security.
-
 When analyzing a system or security incident, I can ask:
+Was information exposed to someone who shouldn't see it?
 
-- Was information exposed to someone who shouldn't see it? → **Confidentiality**
-- Was information changed or corrupted without authorization? → **Integrity**
-- Was a system or information made unavailable to authorized users? → **Availability**
+Confidentiality
+Was information changed or corrupted without authorization?
 
+Integrity
+Was a system or information made unavailable to authorized users?
+
+Availability
 This gives me a basic framework for understanding different cybersecurity threats and security controls.
 
----
+10. What I Learned Today
+• Today I learned that cybersecurity is not only about preventing hackers from breaking into systems.
 
-## What I Learned Today
+• I learned that protecting information involves three major goals:
 
-- Cybersecurity is not only about preventing hackers from breaking into systems.
-- Protecting information involves three major goals:
-  - Keeping information private (**Confidentiality**)
-  - Keeping information accurate and trustworthy (**Integrity**)
-  - Keeping systems and information accessible (**Availability**)
-- Different attacks can affect different parts of the CIA Triad.
+• Keeping information private (Confidentiality)
 
-### My Key Takeaway
+• Keeping information accurate and trustworthy (Integrity)
 
+• Keeping systems and information accessible (Availability)
+I also learned that different attacks can affect different parts of the CIA Triad.
+
+My Key Takeaway
 The easiest way for me to remember the CIA Triad is:
 
-- **Confidentiality** — Who can see it?  
-- **Integrity** — Can I trust it?  
-- **Availability** — Can I access it?
+Confidentiality — Who can see it?
+Integrity — Can I trust it?
+Availability — Can I access it?
 
----
+Questions I Want to Explore Next
+• How does encryption protect confidentiality?
+• How does hashing help protect integrity?
+• What is the difference between hashing and encryption?
+• How do organizations maintain availability?
+• How do cybersecurity professionals identify which part of the CIA Triad has been affected during an attack?
+• How does the CIA Triad apply to a SOC Analyst's work?
 
-## Questions I Want to Explore Next
 
-- How does encryption protect confidentiality?
-- How does hashing help protect integrity?
-- What is the difference between hashing and encryption?
-- How do organizations maintain availability?
-- How do cybersecurity professionals identify which part of the CIA Triad has been affected during an attack?
-- How does the CIA Triad apply to a SOC Analyst's work?
