@@ -1,6 +1,6 @@
 # # 01 - Cybersecurity Fundamentals
 
-My documented journey of learning cybersecurity — concepts, labs, tools, projects, and practical exercises.
+My documented journey of learning cybersecurity; concepts, labs, tools, projects, and practical exercises.
 
 ## About This Repository
 This repository tracks my progress as I build a solid foundation in cybersecurity
