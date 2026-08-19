@@ -15,12 +15,6 @@ Because excessive privileges can increase security risks, users should generally
 3. Linux Groups
 Linux users can belong to groups.
 Groups make it easier to manage permissions for multiple users.
-For example:
-SOC-Analysts
-│
-├── Alice
-├── Brian
-└── Jane
 Permissions can be assigned to the group instead of configuring every user individually.
 
 4. Linux File Permissions
