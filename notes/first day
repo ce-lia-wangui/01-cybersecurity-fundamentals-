@@ -371,3 +371,232 @@ Questions I Want to Explore Next
 • How does the CIA Triad apply to a SOC Analyst's work?
 
 
+ Authentication, Authorization & Accounting (AAA)
+Topic: Authentication, Authorization & Accounting
+Focus: Identity, permissions, and activity tracking
+
+1. Introduction
+After learning about the CIA Triad, I am now learning about Authentication, Authorization, and Accounting (AAA).
+AAA is an important concept in cybersecurity because organizations need to determine:
+•	Who is accessing a system
+•	What that user is allowed to do
+•	What activities the user performed
+The three components are:
+•	Authentication
+•	Authorization
+•	Accounting
+
+2. Authentication
+Authentication is the process of verifying the identity of a user, device, or system.
+In simple terms:
+Authentication answers: "Who are you?"
+Examples of authentication methods include:
+•	Passwords
+•	PINs
+•	Security keys
+•	Authentication tokens
+•	Fingerprints
+•	Facial recognition
+Authentication Factors
+Authentication factors can include:
+Factor	Meaning	Example
+Something you know	Information you know	Password
+Something you have	Something you possess	Phone/security key
+Something you are	A biological characteristic	Fingerprint
+
+3. Multi-Factor Authentication
+Multi-Factor Authentication (MFA) requires two or more different authentication factors.
+For example:
+Password
+    +
+Authenticator code
+    ↓
+Access granted
+The password represents something the user knows, while the authenticator device represents something the user has.
+MFA provides additional protection if a password is compromised.
+
+4. Authorization
+Authorization determines what an authenticated user is allowed to access or perform.
+In simple terms:
+Authorization answers: "What are you allowed to do?"
+For example, a university student may be allowed to:
+•	View their grades
+•	Register for courses
+•	View their profile
+But they should not be allowed to:
+•	Modify another student's grades
+•	Delete university records
+•	Access administrator functions
+
+5. Authentication vs Authorization
+Authentication	Authorization
+Who are you?	What can you do?
+Verifies identity	Determines permissions
+Uses credentials or biometric factors	Uses roles, permissions, and policies
+A user must normally be authenticated before the system can determine what they are authorized to access.
+
+6. Principle of Least Privilege
+The Principle of Least Privilege means giving users, applications, and systems only the permissions necessary to perform their required tasks.
+For example, a receptionist may need access to an appointment system but should not automatically have access to payroll or security administration systems.
+The goal is to reduce the damage that could occur if an account is compromised.
+
+7. Accounting
+Accounting involves recording and tracking activities performed by users or systems.
+It can also be referred to as auditing.
+In simple terms:
+Accounting answers: "What did you do?"
+Examples of information that may be recorded include:
+•	Login times
+•	Logout times
+•	User accounts
+•	IP addresses
+•	Files accessed
+•	Actions performed
+•	System changes
+These records can be useful when investigating security incidents.
+
+8. Why Accounting Is Important
+If an employee's account is compromised, security professionals may use logs to investigate:
+•	When the account was accessed
+•	Where the login originated
+•	What systems were accessed
+•	What files were accessed
+•	What actions were performed
+This makes logging and monitoring important parts of cybersecurity operations.
+
+9. AAA Summary
+  A simple way for me to remember AAA is:
+Authentication → Identity
+Authorization → Permissions
+Accounting → Activity
+
+10. Connection to the CIA Triad
+AAA supports the goals of the CIA Triad.
+Confidentiality
+Authentication and authorization help prevent unauthorized people from accessing information.
+Integrity
+Authorization helps prevent unauthorized users from modifying information.
+Availability
+Strong access controls can help prevent compromised accounts from being used to disrupt systems.
+
+11. What I Learned Today
+o	Today I learned the difference between authentication, authorization, and accounting.
+The most important distinction I learned is:
+Authentication verifies who you are, authorization determines what you can do, and accounting records what you did.
+I also learned about the Principle of Least Privilege and why organizations should avoid giving users unnecessary permissions.
+
+12. Key Takeaway
+	AUTHENTICATION → WHO ARE YOU?
+	AUTHORIZATION → WHAT CAN YOU DO?
+	ACCOUNTING     → WHAT DID YOU DO?
+
+13. Questions I Want to Explore
+•	How does MFA work technically?
+•	What is the difference between authentication and identification?
+•	What are RBAC and ABAC?
+•	How are passwords securely stored?
+•	What are logs?
+•	How does a SOC analyst use authentication logs?
+•	What happens when an account is compromised?
+
+
+ ACCESS CONTROL — Permissions, RBAC & Least Privilege
+Topic: Access Control
+Focus: Permissions, roles, RBAC, and least privilege
+
+1. Introduction
+After learning about Authentication and Authorization, I am now learning how organizations control what authenticated users are allowed to access and perform.
+Access control is an important part of cybersecurity because simply identifying a user is not enough. Organizations must also determine what that user is permitted to do.
+
+2. Permissions
+A permission defines an action that a user or system is allowed to perform on a resource.
+Common permissions include:
+•	Read
+•	Write
+•	Modify
+•	Delete
+•	Execute
+For example, a user may have permission to read a file but not modify or delete it.
+
+3. Roles
+A role is a collection of permissions associated with a particular responsibility or job function.
+Examples include:
+•	Employee
+•	Manager
+•	HR Administrator
+•	SOC Analyst
+•	Security Administrator
+•	Database Administrator
+Roles make it easier for organizations to manage permissions consistently.
+
+4. Role-Based Access Control (RBAC)
+RBAC stands for Role-Based Access Control.
+With RBAC, permissions are assigned to roles, and users are assigned to those roles.
+For example:
+User
+  ↓
+Role
+  ↓
+Permissions
+A SOC Analyst role might have permission to:
+•	View security logs
+•	Investigate alerts
+•	Access security monitoring tools
+However, the role may not have permission to modify payroll records or administer every system in the organization.
+
+5. Principle of Least Privilege
+The Principle of Least Privilege means giving a user, application, process, or system only the minimum permissions required to perform its intended function.
+For example, a SOC analyst may need permission to read security logs but may not need permission to delete them.
+Why it matters
+If an account with excessive privileges is compromised, an attacker may be able to cause significantly more damage.
+Least privilege reduces the potential impact of a compromised account by limiting unnecessary access.
+
+6. Privilege Escalation
+Privilege escalation occurs when an attacker gains privileges beyond those they should have.
+Vertical Privilege Escalation
+An attacker moves from a lower privilege level to a higher one.
+Normal User
+     ↓
+Administrator
+Horizontal Privilege Escalation
+An attacker accesses another user's resources without necessarily gaining a higher privilege level.
+Alice's Account
+      ↓
+Bob's Account
+
+7. RBAC vs Least Privilege
+These concepts are related but different.
+RBAC determines permissions based on a user's role.
+Least Privilege ensures that users, applications, and systems receive only the minimum permissions necessary.
+Both can be used together to reduce unnecessary access.
+
+8. Key Takeaways
+I learned that:
+•	Permissions define what actions can be performed.
+•	Roles group permissions according to responsibilities.
+•	RBAC assigns permissions through roles.
+•	Least privilege limits access to what is actually necessary.
+•	Excessive privileges can increase the impact of a compromised account.
+•	Privilege escalation occurs when an attacker obtains unauthorized additional privileges.
+Mental Model
+Authentication
+      ↓
+Who are you?
+      ↓
+Authorization
+      ↓
+What can you do?
+      ↓
+Permissions / Roles
+      ↓
+Least Privilege
+      ↓
+Only the access you actually need
+
+9. Questions I Want to Explore
+•	How does RBAC work in Windows and Linux?
+•	What is Attribute-Based Access Control (ABAC)?
+•	How are Linux file permissions implemented?
+•	What is the difference between a standard user and an administrator?
+•	How do attackers exploit excessive privileges?
+•	How does privilege escalation happen?
