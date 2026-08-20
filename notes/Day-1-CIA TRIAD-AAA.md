@@ -163,23 +163,39 @@ Grade: F
 the integrity of the information has been compromised.
 
 Threats to Integrity
+
 Examples include:
+
 • Unauthorized Modification: Someone changes information without permission.
+
 • Database Manipulation: An attacker modifies records stored in a database.
+
 • Malware: Malicious software may modify, delete, or corrupt files.
+
 • Man-in-the-Middle Attacks: An attacker intercepts communication and may alter information while it is being transmitted.
+
 • Insider Threats: An authorized employee intentionally or accidentally modifies information improperly.
+
 • Data Corruption: Information becomes inaccurate or damaged because of technical problems, malware, or other causes.
+
 • Website Defacement: An attacker gains access to a website and changes its content.
+
 • Unauthorized Transactions: An attacker modifies financial or transaction information without authorization.
 
 Examples include:
+
 Hashing
+
 Digital signatures
+
 Access controls
+
 File permissions
+
 Version control
+
 Audit logs
+
 Backups
 
 Key Question
