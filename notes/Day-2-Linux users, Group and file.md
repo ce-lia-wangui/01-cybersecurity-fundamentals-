@@ -1,77 +1,132 @@
- Linux Users, Groups & File Permissions
+# Linux Users, Groups & File Permissions
 Topic: Linux Fundamentals
 Focus: Users, groups, permissions, chmod, and chown
 
-1. Introduction
+### 1. Introduction
+
 Today I began learning Linux fundamentals because Linux is widely used in servers, cybersecurity, cloud environments, networking, and security tools.
+
 I focused on understanding how Linux controls access to files and directories through users, groups, and permissions.
+___
+### 2. Linux Users
 
-2. Linux Users
 Linux is a multi-user operating system.
+
 Different users can have different permissions and access levels.
+
 A special account called root has very high privileges.
+
 Because excessive privileges can increase security risks, users should generally receive only the permissions necessary for their work.
+___
+### 3. Linux Groups
 
-3. Linux Groups
 Linux users can belong to groups.
+
 Groups make it easier to manage permissions for multiple users.
+
 Permissions can be assigned to the group instead of configuring every user individually.
+___
+### 4. Linux File Permissions
 
-4. Linux File Permissions
 Linux uses permissions to control access to files and directories.
+
 The three basic permissions are:
+
 Permission	Symbol	Meaning
+
 Read	r	View/read content
+
 Write	w	Modify content
+
 Execute	x	Execute a file
-Permissions are generally represented for:
+
+Permissions are generally represented for
+
 1.	Owner
+
 2.	Group
+
 3.	Others
+
 For example:
+
 -rwxr-xr--
+
 can be broken down as:
+
 Owner  → rwx
+
 Group  → r-x
+
 Others → r--
+___
+### 5. Numeric Permissions
 
-5. Numeric Permissions
 Linux can represent permissions using numbers:
+
 r = 4
+
 w = 2
+
 x = 1
+
 Therefore:
+
 rwx = 7
+
 rw- = 6
+
 r-x = 5
+
 r-- = 4
+
 -w- = 2
+
 --x = 1
+
 --- = 0
+
 For example:
+
 chmod 755 script.sh
+
 means:
+
 Owner  → rwx
+
 Group  → r-x
+
 Others → r-x
+___
+### 6. chmod
 
-6. chmod
 chmod is used to change file permissions.
+
 Example:
+
 chmod 600 secret.txt
+
 This gives:
+
 Owner  → rw-
+
 Group  → ---
+
 Others → ---
+
 Only the owner can read and modify the file.
+___
+### 7. chown
 
-7. chown
 chown is used to change the owner of a file or directory.
-Example:
-sudo chown alice file.txt
-The owner of the file becomes alice.
 
-8. Practical Exercise
+Example:
+
+sudo chown alice file.txt
+
+The owner of the file becomes alice.
+___
+## 8. Practical Exercise
 I created a directory and file using:
 mkdir cyber-lab
 cd cyber-lab
@@ -82,43 +137,60 @@ I changed the permissions using:
 chmod 600 secret.txt
 After changing the permissions, the file had permissions similar to:
 -rw-------
+
 This means the owner can read and write the file, while the group and other users have no permissions.
+___
+## 9. Connection to Authorization
 
-9. Connection to Authorization
 Linux file permissions demonstrate authorization in practice.
+
 Authentication answers:
+
 Who are you?
+
 Authorization answers:
+
 What are you allowed to do?
+
 Linux permissions help enforce the second question by controlling whether users can read, modify, or execute resources.
+___
+## 10. Connection to Least Privilege
 
-10. Connection to Least Privilege
 Linux permissions also demonstrate the Principle of Least Privilege.
+
 Instead of giving every user complete access to a file, permissions can be restricted to only what is necessary.
+
 For example:
+
 Owner  → Read + Write
+
 Group  → No access
+
 Others → No access
+
 This reduces unnecessary access.
+___
+## 11. Key Takeaways
 
-11. Key Takeaways
 Today I learned:
-•	Linux supports multiple users.
-•	Users can belong to groups.
-•	Files and directories have permissions.
-•	The basic permissions are read, write, and execute.
-•	Permissions apply to owners, groups, and others.
-•	chmod changes permissions.
-•	chown changes ownership.
-•	Numeric permissions use the values 4, 2, and 1.
-•	Linux permissions are an example of authorization and access control.
-•	Limiting permissions supports the Principle of Least Privilege.
 
-12. Questions I Want to Explore
-•	What exactly does execute permission mean for directories?
-•	What is the difference between chmod, chown, and chgrp?
-•	How do Linux groups work?
-•	What are special permissions such as SUID, SGID, and Sticky Bit?
-•	How can attackers abuse weak Linux permissions?
-•	How can a SOC analyst detect suspicious permission changes?
+•	Linux supports multiple users.
+
+•	Users can belong to groups.
+
+•	Files and directories have permissions.
+
+•	The basic permissions are read, write, and execute.
+
+•	Permissions apply to owners, groups, and others.
+
+•	chmod changes permissions.
+
+•	chown changes ownership.
+
+•	Numeric permissions use the values 4, 2, and 1.
+
+•	Linux permissions are an example of authorization and access control.
+
+•	Limiting permissions supports the Principle of Least Privilege.
 
