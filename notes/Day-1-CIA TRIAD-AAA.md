@@ -5,9 +5,11 @@ I am beginning my cybersecurity learning journey by studying some of the fundame
 One of the first concepts I am learning is the CIA Triad.
 
 The CIA Triad is a fundamental security model consisting of three principles:
+
 • Confidentiality
 • Integrity
 • Availability
+
 These principles help security professionals understand what needs to be protected when securing information and information systems.
 ___
 ### 2. What is Cybersecurity?
