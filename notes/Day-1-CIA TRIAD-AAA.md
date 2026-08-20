@@ -87,6 +87,7 @@ Key Question
 Who is allowed to see this information?
 
 Protecting Confidentiality
+
 The goal is to prevent unauthorized people from accessing or viewing sensitive information.
 Common controls
 
@@ -139,18 +140,26 @@ Malicious links
 This is especially important because humans can be targeted by attackers.
 
 
-2. Integrity
+### 2. Integrity
+
 Definition
+
 Integrity means ensuring that information remains accurate, complete, trustworthy, and protected from unauthorized modification.
 
 In simple terms:
+
 Integrity means making sure information has not been improperly changed.
 
 Example
+
 Suppose a university database records a student's grade as:
+
 Grade: A
+
 If an unauthorized person changes it to:
+
 Grade: F
+
 the integrity of the information has been compromised.
 
 Threats to Integrity
