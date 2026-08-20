@@ -1,4 +1,4 @@
-## 1. Introduction
+# 1. Introduction
 
 I am beginning my cybersecurity learning journey by studying some of the fundamental concepts used in information security.
 
@@ -9,8 +9,8 @@ The CIA Triad is a fundamental security model consisting of three principles:
 • Integrity
 • Availability
 These principles help security professionals understand what needs to be protected when securing information and information systems.
-
-##2. What is Cybersecurity?
+___
+### 2. What is Cybersecurity?
 Cybersecurity is the practice of protecting computers, networks, applications, devices, systems, and data from unauthorized access, misuse, damage, disruption, or theft.
 
 Examples of assets that may need protection include:
