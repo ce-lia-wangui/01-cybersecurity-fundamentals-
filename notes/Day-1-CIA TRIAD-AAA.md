@@ -1,4 +1,4 @@
-#1. Introduction
+#1. Introduction#
 I am beginning my cybersecurity learning journey by studying some of the fundamental concepts used in information security.
 
 One of the first concepts I am learning is the CIA Triad.
