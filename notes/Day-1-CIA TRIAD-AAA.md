@@ -16,14 +16,23 @@ ___
 Cybersecurity is the practice of protecting computers, networks, applications, devices, systems, and data from unauthorized access, misuse, damage, disruption, or theft.
 
 Examples of assets that may need protection include:
+
 • Personal information
+
 • Passwords
+
 • Financial information
+
 • Databases
+
 • Computer systems
+
 • Networks
+
 • Applications
+
 • Cloud services
+
 ___
 #3. The CIA Triad
 The CIA Triad consist of:
