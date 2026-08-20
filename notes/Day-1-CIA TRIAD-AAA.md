@@ -34,13 +34,17 @@ Examples of assets that may need protection include:
 • Cloud services
 
 ___
-#3. The CIA Triad
+## 3. The CIA Triad
 The CIA Triad consist of:
+
 a. C- confidentiality
+
 b. I- integrity
+
 c. A- Availability
 
-#1. Confidentiality
+
+### 1. Confidentiality
 Definition
 Confidentiality means ensuring that information is accessible only to authorized individuals, systems, or processes.
 
@@ -52,16 +56,27 @@ A student's academic records should only be accessible to the student and author
 An attacker who obtains the student's password and accesses their records would be a violation of confidentiality.
 
 ##Threats to Confidentiality
+
 Examples include:
+
 • Phishing - An attacker tricks a user into revealing sensitive information such as passwords or account credentials.
+
 • Password theft - An attacker obtains a user's password and uses it to access protected information.
+
 • Data breaches - Unauthorized individuals gain access to sensitive organizational or personal data.
+
 • Eavesdropping - An attacker secretly monitors communications to obtain information.
+
 • Social Engineering: An attacker manipulates a person into revealing confidential information or granting access.
+
 • Spyware: Malicious software secretly monitors a user's activity or collects sensitive information.
+
 • Unauthorized Access: An individual accesses a system, account, or database without permission.
+
 • Shoulder Surfing: An attacker observes someone entering sensitive information, such as a password or PIN.
+
 • Lost or Stolen Devices: A lost or stolen laptop, phone, or storage device may expose sensitive information stored on it.
+
 
 Example:
 An attacker sends a student a fake university login page. The student enters their username and password, which are then sent to the attacker. The attacker can now potentially access the student's academic information.
