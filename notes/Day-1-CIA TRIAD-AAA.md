@@ -45,10 +45,7 @@ c. A- Availability
 
 
 ### 1. Confidentiality
-Definition
-Confidentiality means ensuring that information is accessible only to authorized individuals, systems, or processes.
 
-In simple terms:
 Confidentiality means preventing unauthorized people from accessing or viewing information.
 
 Example:
@@ -142,12 +139,6 @@ This is especially important because humans can be targeted by attackers.
 
 ### 2. Integrity
 
-Definition
-
-Integrity means ensuring that information remains accurate, complete, trustworthy, and protected from unauthorized modification.
-
-In simple terms:
-
 Integrity means making sure information has not been improperly changed.
 
 Example
@@ -205,7 +196,9 @@ Protecting Integrity
 The goal is to ensure that information remains accurate, complete, and trustworthy.
 Common controls
 1. Hashing
+   
 A cryptographic hash can be used to detect whether data has been changed.
+
 For example:
 Original file → Hash → A81F...
 If the file is modified:
@@ -214,17 +207,22 @@ The different hash values indicate that the data has changed.
 Important: Hashing is generally used for integrity verification, not for keeping data secret.
 
 2. Digital Signatures
+   
 Digital signatures can help verify:
+
 Who created/signed the information
 Whether the information was modified after signing
 They therefore provide important integrity and authenticity protections.
 
 3. Access Controls and Permissions
+   
 Users should not have permission to modify information unless their job requires it.
+
 For example:
 A student might be allowed to view their grade but should not have permission to change it.
 
 4. Audit Logs
+   
 Systems should record important activities such as:
 Who logged in?
 What did they access?
@@ -235,10 +233,12 @@ Who changed it, when, and from which account/system?
 This is extremely important in security investigations and SOC environments.
 
 5. Version Control
+   
 Organizations can maintain previous versions of important files or configurations.
 If an unauthorized change occurs, security teams may be able to identify the change and restore the previous version.
 
-6. Backups
+9. Backups
+    
 Regular backups allow organizations to recover from:
 Data corruption
 Malware
@@ -248,28 +248,35 @@ Hardware failures
 Backups are therefore important for both Integrity and Availability.
 
 
-C. Availability
-Definition
+###C. Availability
 
-Availability means ensuring that authorized users can access information and systems when they need them.
-
-In simple terms:
 Availability means keeping systems and information accessible to authorized users when required.
 
 Example
+
 If a university student portal becomes unavailable during course registration, students may be unable to register for their courses.
 This is an availability problem.
 
 Threats to Availability
+
 Examples include:
+
 • Distributed Denial-of-Service (DDoS) Attacks: Attackers overwhelm a system or server with traffic, making it difficult or impossible for legitimate users to access it.
+
 • Ransomware: Malicious software encrypts files or systems, preventing legitimate users from accessing them.
+
 • Hardware Failure: Failure of servers, storage devices, or other hardware can make systems unavailable.
+
 • Power Outages: Loss of electricity can cause systems and services to become unavailable.
+
 • Network Failures: Problems with network infrastructure can prevent users from accessing systems.
+
 • Server Crashes: A server failure can cause applications and services to stop working.
+
 • Natural Disasters: Floods, fires, earthquakes, and other disasters can damage infrastructure.
+
 • Resource Exhaustion: Excessive use of CPU, memory, storage, or other resources can cause a system to become unavailable.
+
 
 Key Question
 Can authorized users access the system when they need it?
