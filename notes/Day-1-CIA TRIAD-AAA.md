@@ -136,7 +136,7 @@ Suspicious attachments
 Malicious links
 This is especially important because humans can be targeted by attackers.
 
-
+___
 ### 2. Integrity
 
 Integrity means making sure information has not been improperly changed.
@@ -247,8 +247,8 @@ Accidental deletion
 Hardware failures
 Backups are therefore important for both Integrity and Availability.
 
-
-###C. Availability
+___
+### C. Availability
 
 Availability means keeping systems and information accessible to authorized users when required.
 
@@ -282,15 +282,18 @@ Key Question
 Can authorized users access the system when they need it?
 
 Protecting Availability
+
 The goal is to ensure that authorized users can access systems and information when they need them.
 Common controls
 
-1. Backups
+1. Bacukp
+
 Organizations should maintain reliable backups of important data.
 A good backup strategy helps an organization recover after:
 Ransomware → Data loss → Recovery from backup
 
 2. Redundancy
+ 
 Organizations can use multiple servers, storage systems, network connections, or other components.
 If one fails:
 Server A 
@@ -299,6 +302,7 @@ Server B continues operating
 This reduces the impact of individual failures.
 
 3. Failover Systems
+   
 A failover system automatically switches to another system when the primary system fails.
 For example:
 Primary Server → Failure 
@@ -306,7 +310,9 @@ Primary Server → Failure
 Backup Server → Takes over 
 
 4. Load Balancing
+ 
 A load balancer distributes traffic across multiple servers.
+
 Instead of:
 10,000 users → One server
 Traffic can be distributed:
@@ -319,50 +325,71 @@ Server D
 This can improve performance and resilience.
 
 5. DDoS Protection
+   
 Organizations can use DDoS protection services and network controls to detect and mitigate malicious traffic.
+
 The goal is to prevent attackers from overwhelming the organization's systems.
+
 6. Disaster Recovery
+ 
 Organizations should have a plan for recovering systems after major incidents such as:
+
 Cyberattacks
 Fires
 Floods
 Power failures
 Hardware failures
+
 A disaster recovery plan answers questions such as:
 What systems need to be restored first?
 Where will systems be restored?
 How quickly should they be restored?
 
 7. System Monitoring
+    
 Security and IT teams monitor systems for problems such as:
+
 High CPU usage
 High memory usage
 Network failures
 Server crashes
 Unusual traffic
 Service outages
+
 Early detection allows teams to respond before a small problem becomes a major outage.
 
 A simple way I remember the CIA Triad is:
+
 CONFIDENTIALITY → SEE
+
 INTEGRITY → TRUST
+
 AVAILABILITY → ACCESS
 
 Threats Can Affect More Than One CIA Principle
+
 It is important to understand that an attack does not always affect only one part of the CIA Triad.
+
 For example, ransomware can affect all three principles.
+
 • Confidentiality
+
 If attackers steal sensitive files before encrypting them, confidential information may be exposed.
+
 • Integrity
+
 The attackers modify or encrypt the original files, meaning the information has been altered without authorization.
+
 • Availability
+
 Users can no longer access their files because they have been encrypted.
+
 Therefore, a single ransomware incident can potentially affect:
+
 • Confidentiality + Integrity + Availability
+
 This is why cybersecurity professionals need to examine an incident carefully rather than automatically assigning an attack to only one category.
-
-
-
+___
 Real-World Example: University Student Portal
 
 Consider an online university student portal containing:
