@@ -1,8 +1,8 @@
-## Cybersecurity Fundamentals
+# Cybersecurity Fundamentals
 
 My documented journey of learning cybersecurity from fundamental concepts to hands-on labs, tools, and real-world security projects.
 
-## About This Repository
+# About This Repository
 
 This repository documents my journey as I build a strong foundation in cybersecurity, networking, Linux, security operations, and practical security skills.
 
@@ -20,9 +20,9 @@ I use this repository to record what I learn, practice concepts through hands-on
 - Document my learning consistently
 - Build a portfolio that demonstrates my skills
 
-## Topics I'm Learning
+# Topics I'm Learning
 
-# Cybersecurity Fundamentals
+## Cybersecurity Fundamentals
 
 - CIA Triad
 - Security principles
@@ -31,7 +31,7 @@ I use this repository to record what I learn, practice concepts through hands-on
 - Authentication and authorization
 - Security policies
 
-# Linux
+## Linux
 
 - Linux filesystem
 - Basic commands
@@ -41,7 +41,7 @@ I use this repository to record what I learn, practice concepts through hands-on
 - Networking commands
 - Shell basics
 
-# Networking
+## Networking
 
 - Network fundamentals
 - OSI Model
@@ -58,7 +58,7 @@ I use this repository to record what I learn, practice concepts through hands-on
 - Packets and frames
 - Wireless networking
 
-# Security Operations
+## Security Operations
 
 - Logs
 - Network monitoring
@@ -68,7 +68,7 @@ I use this repository to record what I learn, practice concepts through hands-on
 - MITRE ATT&CK
 - Security monitoring
 
-## Tools
+# Tools
 
 Tools I plan to learn and practice include:
 
@@ -82,23 +82,23 @@ Tools I plan to learn and practice include:
 - SIEM platforms
 - Cloud security tools
 
-# "notes/"
+## "notes/"
 
 My study notes and simplified explanations of cybersecurity concepts.
 
-# "labs/"
+## "labs/"
 
 Hands-on exercises, experiments, screenshots, observations, and lessons learned.
 
-# "tools/"
+## "tools/"
 
 Command references, cheat sheets, and notes about cybersecurity tools.
 
-# "projects/"
+## "projects/"
 
 Larger practical projects that combine the skills I have learned.
 
-## Practical Learning
+# Practical Learning
 
 My approach is:
 
@@ -117,7 +117,7 @@ SHARE
 I don't want this repository to contain only theory. Whenever possible, I will turn what I learn into hands-on exercises, labs, scripts, diagrams, and projects.
 
 
-## Learning Resources
+# Learning Resources
 
 I learn through a combination of:
 
@@ -129,13 +129,13 @@ I learn through a combination of:
 - Networking simulations
 - Personal projects
 
-## Disclaimer
+# Disclaimer
 
 All labs and security exercises in this repository are performed for educational purposes and on systems/environments where I have permission to test.
 
 ---
 
-## My Journey
+# My Journey
 
 This repository will evolve as I continue learning.
 
