@@ -52,7 +52,7 @@ Example:
 A student's academic records should only be accessible to the student and authorized university staff.
 An attacker who obtains the student's password and accesses their records would be a violation of confidentiality.
 
-##Threats to Confidentiality
+## Threats to Confidentiality
 
 Examples include:
 
